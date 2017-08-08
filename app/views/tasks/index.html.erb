@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h3>Tasks list</h3>
+      <ul>
+        <% @tasks.each do |t| %>
+        <li>
+          <a href="<%= task_path(t) %>">
+          <%= t.name %></a>
+           <!--<% t.status == false ? icon = "fa fa-times fa-lg" : icon = "fa fa-check fa-lg" %>
+          <i class="<%= icon %>" aria-hidden="true"></i>-->
+        </li>
+        <% end %>
+      </ul>
+      <%= link_to "add task", new_task_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

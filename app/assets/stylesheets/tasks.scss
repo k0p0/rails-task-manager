@@ -1,0 +1,28 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+li > a:hover {
+  text-decoration: none;
+  color: light-grey;
+}
+li > a {
+  text-decoration: none;
+  color: grey;
+}
+
+li {
+  font-size: 18px;
+  list-style-type: none;
+}
+
+ #task {
+   font-size: 18px;
+ }
+
+.fa-times {
+ color:red;
+}
+
+.fa-check {
+ color:green;
+}
